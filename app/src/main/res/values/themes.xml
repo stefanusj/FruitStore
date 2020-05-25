@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Top level theme to be used in AndroidManifest.xml-->
+    <style name="Theme.FruitStore" parent="Base.Theme.FruitStore" />
+
+    <!--Base custom theme-->
+    <style name="Base.Theme.FruitStore" parent="Base.Theme.MaterialThemeBuilder">
+
+        <item name="colorPrimary">@color/brown_primary</item>
+        <item name="colorPrimaryVariant">@color/brown_primary</item>
+        <item name="colorSecondary">@color/brown_primary</item>
+        <item name="colorSecondaryVariant">@color/brown_primary</item>
+
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorSurface">@color/white_900</item>
+        <item name="colorError">@color/error_color</item>
+
+        <item name="colorOnPrimary">@color/white_900</item>
+        <item name="colorOnSecondary">@color/white_900</item>
+        <item name="colorOnBackground">@color/black_900</item>
+        <item name="colorOnSurface">@color/black_900</item>
+        <item name="colorOnError">@color/white_900</item>
+    </style>
+
+    <style name="Base.Theme.MaterialThemeBuilder" parent="Theme.MaterialComponents">
+
+        <item name="fontFamily">@font/opensans</item>
+        <item name="android:fontFamily">@font/opensans</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!--Custom view shape attributes-->
+        <item name="appBarLayoutStyle">@style/Widget.FruitStore.AppBarLayout</item>
+        <item name="materialCardViewStyle">@style/Widget.FruitStore.CardView</item>
+        <item name="textInputStyle">@style/Widget.FruitStore.TextInputLayout</item>
+        <item name="snackbarStyle">@style/Widget.FruitStore.Snackbar</item>
+        <item name="snackbarTextViewStyle">@style/Widget.FruitStore.Snackbar.TextView</item>
+
+        <!--Material shape attributes-->
+        <item name="shapeAppearanceSmallComponent">
+            @style/ShapeAppearance.FruitStore.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.FruitStore.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">
+            @style/ShapeAppearance.FruitStore.LargeComponent
+        </item>
+
+    </style>
+</resources>

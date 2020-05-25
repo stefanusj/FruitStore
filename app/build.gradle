@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: "androidx.navigation.safeargs.kotlin"
 apply plugin: 'kotlin-kapt'
+apply plugin: 'koin'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -20,6 +21,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    buildFeatures {
+        dataBinding = true
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -29,11 +40,9 @@ dependencies {
     //---------- Coroutines ----------//
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
-    //---------- Coroutines ----------//
-    implementation "org.koin:koin-androidx-scope:$koinVersion"
+    //---------- Koin ----------//
     implementation "org.koin:koin-androidx-viewmodel:$koinVersion"
-    implementation "org.koin:koin-androidx-fragment:$koinVersion"
-    //---------- Appcompat ----------//
+    //---------- AppCompat ----------//
     implementation "androidx.appcompat:appcompat:$appCompatVersion"
     implementation "androidx.core:core-ktx:$ktxVersion"
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
@@ -43,18 +52,21 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
     //---------- Navigation ----------//
+    implementation "androidx.navigation:navigation-runtime-ktx:$navigationVersion"
     implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
-    implementation "androidx.viewpager2:viewpager2:$viewpagerVersion"
     //---------- Room ----------//
     implementation "androidx.room:room-runtime:$roomVersion"
     implementation "androidx.room:room-ktx:$roomVersion"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt "androidx.room:room-compiler:$roomVersion"
     //---------- Design ----------//
+    implementation "androidx.palette:palette-ktx:$paletteVersion"
     implementation "com.google.android.material:material:$materialVersion"
-    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    implementation "io.coil-kt:coil:$coilVersion"
     //---------- Networking ----------//
     implementation "com.squareup.retrofit2:retrofit:$networkVersion"
     implementation "com.squareup.retrofit2:converter-gson:$networkVersion"
+
+    //---------- DEBUGGING ----------//
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
 }

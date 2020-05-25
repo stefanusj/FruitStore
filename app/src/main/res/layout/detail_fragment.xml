@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="backListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="viewModel"
+            type="com.stefanusj.fruitstore.ui.detail.DetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.detail.DetailFragment">
+
+        <ImageView
+            android:id="@+id/iv_fruit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:imageFromUrl="@{viewModel.fruitWithPropertyWithCart.fruit.image.high}"
+            app:layout_constraintBottom_toBottomOf="@id/spacer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/brown_primary"
+            tools:srcCompat="@tools:sample/avatars[7]" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.FruitStore.Button.IconOnly.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_l"
+            android:onClick="@{backListener}"
+            app:backgroundTint="?colorPrimary"
+            app:icon="@drawable/ic_back"
+            app:iconTint="?colorOnPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="?colorPrimary" />
+
+        <Space
+            android:id="@+id/spacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/content"
+            app:layout_constraintEnd_toEndOf="@id/content"
+            app:layout_constraintStart_toStartOf="@id/content"
+            app:layout_constraintTop_toTopOf="@id/content"
+            app:layout_constraintVertical_bias=".1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_detail"
+            android:padding="@dimen/padding_xl"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:backgroundTint="@color/black_900">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_title"
+                style="@style/TextAppearance.FruitStore.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.fruitWithPropertyWithCart.fruit.name}"
+                android:textColor="?colorOnPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Nama buah" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_quantity_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xl"
+                android:text="@{@string/quantity_label(viewModel.fruitWithPropertyWithCart.fruit.unit)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                tools:text="Jumlah Unit (kg)" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mb_increment"
+                style="@style/Widget.FruitStore.Button.IconOnly.Small.Platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_m"
+                android:onClick="@{viewModel::onIncrementClicked}"
+                app:icon="@drawable/ic_increment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_quantity_label" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_quantity"
+                style="@style/TextAppearance.FruitStore.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_l"
+                android:text="@{viewModel.quantity.toString()}"
+                android:textColor="?colorOnPrimary"
+                app:layout_constraintBaseline_toBaselineOf="@id/mb_increment"
+                app:layout_constraintStart_toEndOf="@id/mb_increment"
+                tools:text="0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mb_decrement"
+                style="@style/Widget.FruitStore.Button.IconOnly.Small.Platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{viewModel::onDecrementClicked}"
+                app:icon="@drawable/ic_decrement"
+                app:layout_constraintBaseline_toBaselineOf="@id/mb_increment"
+                app:layout_constraintStart_toEndOf="@id/tv_quantity" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_label"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_quantity_label"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                style="@style/TextAppearance.FruitStore.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?colorOnPrimary"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_quantity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:price="@{viewModel.fruitWithPropertyWithCart.fruit.price * viewModel.quantity}"
+                tools:text="Rp1.000" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:barrierMargin="@dimen/margin_xl"
+                app:constraint_referenced_ids="materialTextView,mb_decrement,mb_increment,tv_quantity" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mb_favorite"
+                style="@style/Widget.FruitStore.Button.IconOnly.Platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{viewModel::onFavoriteClicked}"
+                app:isFavorite="@{viewModel.isFavorite()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/barrier"
+                tools:icon="@drawable/ic_favorite" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.FruitStore.Button.NoInset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_l"
+                android:onClick="@{viewModel::onAddToCartClicked}"
+                android:text="@string/add_to_cart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/mb_favorite"
+                app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

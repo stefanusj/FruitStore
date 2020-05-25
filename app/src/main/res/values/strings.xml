@@ -1,12 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Fruit Store</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+
+    <string name="fruit_fragment_title">Temukan buahmu disini</string>
+    <string name="cart_fragment_title">Orderan saya</string>
+
+    <string name="price_label">Total harga</string>
+    <string name="quantity_label">Jumlah unit (%s)</string>
+
+    <string name="fruit_price_with_quantity">%s/%s</string>
+    <string name="quantity">Jumlah: %s %s</string>
+
+    <string name="add_to_cart">Tambah buah</string>
+    <string name="added_to_cart">Disimpan dalam keranjang</string>
+    <string name="removed_from_cart">Dihapus dari keranjang</string>
+    <string name="added_to_favorite">Ditambahkan ke favorit</string>
+    <string name="removed_from_favorite">Dihapus dari favorit</string>
+
+    <string name="fruit_order">Pesan buah</string>
+    <string name="cart_checkout">Check Out</string>
+    <string name="cart_success">Buah berhasil dibeli</string>
+
+    <!--Error String Helper-->
+    <string name="failed_connect_server">Gagal terhubung ke server</string>
+    <string name="cart_total">Total harga</string>
 </resources>

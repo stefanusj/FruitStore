@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/fruitFragment">
+
+    <fragment
+        android:id="@+id/fruitFragment"
+        android:name="com.stefanusj.fruitstore.ui.fruit.FruitFragment"
+        tools:layout="@layout/fruit_fragment">
+
+        <action
+            android:id="@+id/toDetail"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/toCart"
+            app:destination="@id/cartFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.stefanusj.fruitstore.ui.detail.DetailFragment"
+        tools:layout="@layout/detail_fragment">
+
+        <argument
+            android:name="id"
+            app:argType="long" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.stefanusj.fruitstore.ui.cart.CartFragment"
+        android:label="CartFragment"
+        tools:layout="@layout/cart_fragment">
+
+        <action
+            android:id="@+id/toDetail"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+</navigation>

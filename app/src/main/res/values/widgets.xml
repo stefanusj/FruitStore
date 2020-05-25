@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.FruitStore.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="android:background">?android:colorBackground</item>
+        <item name="liftOnScroll">true</item>
+    </style>
+
+    <style name="Widget.FruitStore.Button.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="iconSize">24dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.FruitStore.Button.IconOnly.Platform">
+        <item name="strokeColor">?colorControlHighlight</item>
+        <item name="iconTint">?colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.FruitStore.Button.IconOnly.Small">
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:minWidth">36dp</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <style name="Widget.FruitStore.Button.IconOnly.Small.Platform">
+        <item name="strokeColor">?colorControlHighlight</item>
+        <item name="iconTint">?colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.FruitStore.Button.NoInset" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="Widget.FruitStore.Button.NoInset.Sharp">
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="Widget.FruitStore.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.FruitStore.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.FruitStore.CircleCorner</item>
+    </style>
+
+    <style name="Widget.FruitStore.Snackbar" parent="Widget.MaterialComponents.Snackbar.FullWidth" />
+
+    <style name="Widget.FruitStore.Snackbar.TextView" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>
