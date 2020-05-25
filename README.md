@@ -1,9 +1,10 @@
-# Fruit Store
+# Fruit Store [![Fruit Store](https://img.shields.io/badge/Download-APK-brown?style=for-the-badge&logo=android)](https://github.com/stefanusj/FruitStore/tree/master/apk)
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg?style=flat-square)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-21%2B-green?style=flat-square)](https://android-arsenal.com/api?level=21)
 
 **Fruit Store** adalah contoh aplikasi yang mengimplementasikan *Modern Android App Architecture*. Aplikasi ini dibuat dengan menggunakan kotlin dan MVVM pattern serta Architecture Components. 
+
 
 ## Tentang Aplikasi
 Aplikasi ini merupakan aplikasi sederhana dimana kita memiliki daftar buah beserta harga. apabila di klik maka akan menampilkan detail dari buah beserta jumlah buah yang ingin dibeli. Aplikasi ini dibuat dengan harapan bisa sebagai contoh dalam pembuatan aplikasi yang lainnya yang juga menggunakan best practice dari google
@@ -12,6 +13,15 @@ Aplikasi ini merupakan aplikasi sederhana dimana kita memiliki daftar buah beser
 - Pencarian buah.
 - Menyimpan buah favorit.
 - Menampilkan daftar buah beserta harga (berdasarkan favorit maupun query pencarian)
+
+## Screenshots
+
+Beberapa screenshot aplikasi
+
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-26-20-234.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-27-26-027.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-26-38-323.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-26-52-326.jpg"  width="200" height="400"></kbd>
 
 ## Architecture
 Arsitektur aplikasi ini [**MVVM (Model View View-Model)**](https://developer.android.com/jetpack/docs/guide#recommended-app-arch).
