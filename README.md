@@ -26,7 +26,8 @@ Beberapa screenshot aplikasi
 ## Architecture
 Arsitektur aplikasi ini [**MVVM (Model View View-Model)**](https://developer.android.com/jetpack/docs/guide#recommended-app-arch).
 Aplikasi ini mendukung prinsip [**Single Activity**](https://www.youtube.com/watch?v=2k8x8V77CrU).
-![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
+
+<kbd>![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)</kbd>
 
 ## Library pendukung
 - [Kotlin](https://kotlinlang.org/) - Bahasa pemrograman android resmi dari Google.
