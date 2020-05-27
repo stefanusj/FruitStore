@@ -6,7 +6,6 @@ import androidx.lifecycle.observe
 import com.stefanusj.fruitstore.R
 import com.stefanusj.fruitstore.adapter.CartAdapter
 import com.stefanusj.fruitstore.databinding.CartFragmentBinding
-import com.stefanusj.fruitstore.helper.setupSnackbar
 import com.stefanusj.fruitstore.ui.BaseFragment
 
 class CartFragment : BaseFragment<CartFragmentBinding>() {
@@ -19,7 +18,7 @@ class CartFragment : BaseFragment<CartFragmentBinding>() {
     }
 
     override fun subscribeUi(): Unit = with(viewModel) {
-        view?.setupSnackbar(viewLifecycleOwner, snackbarText)
+        super.subscribeUi()
         cart.observe(viewLifecycleOwner) {
             (binding.rvCart.adapter as CartAdapter).submitList(it)
         }

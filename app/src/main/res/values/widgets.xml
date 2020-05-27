@@ -49,16 +49,16 @@
         <item name="android:background">?selectableItemBackground</item>
     </style>
 
-    <style name="Widget.FruitStore.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-        <item name="boxStrokeWidth">1dp</item>
-        <item name="boxStrokeWidthFocused">1dp</item>
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.FruitStore.CircleCorner</item>
-    </style>
-
     <style name="Widget.FruitStore.Snackbar" parent="Widget.MaterialComponents.Snackbar.FullWidth" />
 
     <style name="Widget.FruitStore.Snackbar.TextView" parent="Widget.MaterialComponents.Snackbar.TextView">
         <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Widget.FruitStore.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.FruitStore.CircleCorner</item>
     </style>
 
 </resources>

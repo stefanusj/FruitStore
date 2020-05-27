@@ -1,4 +1,4 @@
-# Fruit Store [![Fruit Store](https://img.shields.io/badge/Download-APK-brown?style=for-the-badge&logo=android)](https://github.com/stefanusj/FruitStore/tree/master/apk)
+# Fruit Store [![Fruit Store](https://img.shields.io/badge/APK-brown?style=for-the-badge&logo=android)](https://github.com/stefanusj/FruitStore/tree/master/apk)
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg?style=flat-square)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-21%2B-green?style=flat-square)](https://android-arsenal.com/api?level=21)
@@ -18,10 +18,10 @@ Aplikasi ini merupakan aplikasi sederhana dimana kita memiliki daftar buah beser
 
 Beberapa screenshot aplikasi
 
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-26-20-234.jpg"  width="200" height="400"></kbd>
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-27-26-027.jpg"  width="200" height="400"></kbd>
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-26-38-323.jpg"  width="200" height="400"></kbd>
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-26-01-26-52-326.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-10-13-693.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-10-14-097.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-10-14-144.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-11-31-850.jpg"  width="200" height="400"></kbd>
 
 ## Architecture
 Arsitektur aplikasi ini [**MVVM (Model View View-Model)**](https://developer.android.com/jetpack/docs/guide#recommended-app-arch).
@@ -44,7 +44,7 @@ Aplikasi ini mendukung prinsip [**Single Activity**](https://www.youtube.com/wat
 - [GSON Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/gson) - Converter untuk mengubah JSON menjadi GSON dan sebaliknya dari Retrofit.
 - [OkHttp3](https://square.github.io/okhttp/) -  Mencegat pemanggilan API dan mengembalikan respon palsu dari server.
 - [Coil](https://coil-kt.github.io/coil/) - Loader gambar yang support coroutines.
-- [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database) - Debugging data didalam database.
+- [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database) - Debugging data di dalam database.
 
 ## Credit
 - [Unsplash](https://unsplash.com/) - Untuk gambar buah-buahan.

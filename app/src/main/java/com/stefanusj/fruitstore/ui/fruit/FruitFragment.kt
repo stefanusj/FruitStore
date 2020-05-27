@@ -6,7 +6,6 @@ import androidx.lifecycle.observe
 import com.stefanusj.fruitstore.R
 import com.stefanusj.fruitstore.adapter.FruitAdapter
 import com.stefanusj.fruitstore.databinding.FruitFragmentBinding
-import com.stefanusj.fruitstore.helper.setupSnackbar
 import com.stefanusj.fruitstore.ui.BaseFragment
 
 class FruitFragment : BaseFragment<FruitFragmentBinding>() {
@@ -19,7 +18,7 @@ class FruitFragment : BaseFragment<FruitFragmentBinding>() {
     }
 
     override fun subscribeUi(): Unit = with(viewModel) {
-        view?.setupSnackbar(viewLifecycleOwner, snackbarText)
+        super.subscribeUi()
         fruits.observe(viewLifecycleOwner) {
             (binding.rvFruit.adapter as FruitAdapter).submitList(it)
         }

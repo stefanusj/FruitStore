@@ -71,7 +71,7 @@ private val FAKE_RESULTS_FRUITS = listOf(
         id = 8,
         image = generateImages("photo-1554795808-3231c32711cf"),
         name = "Bluberi",
-        unit = "pack",
+        unit = "pak",
         price = 60_000
     ),
     Fruit(

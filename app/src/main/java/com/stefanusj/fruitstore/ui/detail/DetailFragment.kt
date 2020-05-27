@@ -6,7 +6,6 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.stefanusj.fruitstore.R
 import com.stefanusj.fruitstore.databinding.DetailFragmentBinding
-import com.stefanusj.fruitstore.helper.setupSnackbar
 import com.stefanusj.fruitstore.helper.toColorStateList
 import com.stefanusj.fruitstore.ui.BaseFragment
 
@@ -24,7 +23,7 @@ class DetailFragment : BaseFragment<DetailFragmentBinding>() {
     }
 
     override fun subscribeUi(): Unit = with(viewModel) {
-        view?.setupSnackbar(viewLifecycleOwner, snackbarText)
+        super.subscribeUi()
         color.observe(viewLifecycleOwner) {
             activity?.window?.statusBarColor = it
             activity?.window?.navigationBarColor = it
