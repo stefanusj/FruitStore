@@ -18,16 +18,14 @@ Aplikasi ini merupakan aplikasi sederhana dimana kita memiliki daftar buah beser
 
 Beberapa screenshot aplikasi
 
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-10-13-693.jpg"  width="200" height="400"></kbd>
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-10-14-097.jpg"  width="200" height="400"></kbd>
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-10-14-144.jpg"  width="200" height="400"></kbd>
-<kbd><img src="https://github.com/stefanusj/FruitStore/blob/master/screenshot/Screenshot_2020-05-28-01-11-31-850.jpg"  width="200" height="400"></kbd>
+<kbd><img src="https://stefanusj.com/storage/portfolios/fruit-store.jpg"  width="500" height="500"></kbd>
+
 
 ## Architecture
 Arsitektur aplikasi ini [**MVVM (Model View View-Model)**](https://developer.android.com/jetpack/docs/guide#recommended-app-arch).
 Aplikasi ini mendukung prinsip [**Single Activity**](https://www.youtube.com/watch?v=2k8x8V77CrU).
 
-<kbd>![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)</kbd>
+<kbd><img src="https://developer.android.com/topic/libraries/architecture/images/final-architecture.png"  width="700" height="550"></kbd>
 
 ## Library pendukung
 - [Kotlin](https://kotlinlang.org/) - Bahasa pemrograman android resmi dari Google.
