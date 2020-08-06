@@ -1,4 +1,6 @@
-# Fruit Store [![Fruit Store](https://img.shields.io/badge/APK-brown?style=for-the-badge&logo=android)](https://github.com/stefanusj/FruitStore/tree/master/apk)
+<img src="https://raw.githubusercontent.com/stefanusj/FruitStore/master/app/src/main/ic_launcher-playstore.png" width="100">
+
+# Fruit Store [![Fruit Store](https://img.shields.io/badge/APK-brown?style=for-the-badge&logo=android)](https://github.com/stefanusj/FruitStore/raw/master/apk/FruitStore.apk)
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg?style=flat-square)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-21%2B-green?style=flat-square)](https://android-arsenal.com/api?level=21)
@@ -15,9 +17,6 @@ Aplikasi ini merupakan aplikasi sederhana dimana kita memiliki daftar buah beser
 - Menampilkan daftar buah beserta harga (berdasarkan favorit maupun query pencarian)
 
 ## Screenshots
-
-Beberapa screenshot aplikasi
-
 <kbd><img src="https://stefanusj.com/storage/portfolios/fruit-store.jpg"  width="500" height="500"></kbd>
 
 

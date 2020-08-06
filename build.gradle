@@ -2,17 +2,17 @@
 buildscript {
     ext {
         appCompatVersion = '1.1.0'
-        constraintLayoutVersion = '2.0.0-beta6'
+        constraintLayoutVersion = '2.0.0-rc1'
         coilVersion = '0.11.0'
         coroutinesVersion = '1.3.4'
-        fragmentKtxVersion = '1.2.4'
+        fragmentKtxVersion = '1.2.5'
         koinVersion = '2.1.5'
         kotlinVersion = '1.3.72'
-        ktxVersion = '1.2.0'
+        ktxVersion = '1.3.1'
         lifecycleVersion = '2.2.0'
-        materialVersion = '1.2.0-alpha06'
-        navigationVersion = '2.2.2'
-        networkVersion = '2.8.1'
+        materialVersion = '1.3.0-alpha02'
+        navigationVersion = '2.3.0'
+        networkVersion = '2.9.0'
         paletteVersion = '1.0.0'
         roomVersion = '2.2.5'
 
@@ -20,7 +20,7 @@ buildscript {
         buildToolsVersion = '29.0.3'
         minSdkVersion = 21
         targetSdkVersion = 29
-        gradleVersion = '4.0.0-rc01'
+        gradleVersion = '4.0.1'
     }
     repositories {
         google()
